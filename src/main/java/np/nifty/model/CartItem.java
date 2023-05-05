@@ -2,14 +2,14 @@ package np.nifty.model;
 
 public class CartItem {
 	private String id;
-	private Cart cart;
+	private Customer customer;
 	private Product product;
 	private int quantity;
 
-	public CartItem(String id, Cart cart, Product product, int quantity) {
+	public CartItem(String id, Customer customer, Product product, int quantity) {
 		super();
 		this.id = id;
-		this.cart = cart;
+		this.customer = customer;
 		this.product = product;
 		this.quantity = quantity;
 	}
@@ -22,12 +22,12 @@ public class CartItem {
 		this.id = id;
 	}
 
-	public Cart getCart() {
-		return cart;
+	public Customer getCustomer() {
+		return customer;
 	}
 
-	public void setCart(Cart cart) {
-		this.cart = cart;
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
 	}
 
 	public Product getProduct() {
@@ -45,5 +45,4 @@ public class CartItem {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-
 }

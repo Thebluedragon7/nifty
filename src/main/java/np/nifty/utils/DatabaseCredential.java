@@ -5,7 +5,7 @@ public class DatabaseCredential {
 	private static final String _password = "";
 	private static String _databaseHost = "localhost";
 	private static final String _databasePort = "3306";
-	private static final String _databaseName = "advancedProgramming";
+	private static final String _databaseName = "nifty";
 	public static String getUsername() {
 		return _username;
 	}

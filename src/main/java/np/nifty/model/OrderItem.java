@@ -2,15 +2,15 @@ package np.nifty.model;
 
 public class OrderItem {
 	private String id;
-	private Cart cart;
+	private Order order;
 	private Product product;
 	private int quantity;
 	private double priceOnOrder;
 
-	public OrderItem(String id, Cart cart, Product product, int quantity, double priceOnOrder) {
+	public OrderItem(String id, Order order, Product product, int quantity, double priceOnOrder) {
 		super();
 		this.id = id;
-		this.cart = cart;
+		this.order = order;
 		this.product = product;
 		this.quantity = quantity;
 		this.priceOnOrder = priceOnOrder;
@@ -24,12 +24,12 @@ public class OrderItem {
 		this.id = id;
 	}
 
-	public Cart getCart() {
-		return cart;
+	public Order getOrder() {
+		return order;
 	}
 
-	public void setCart(Cart cart) {
-		this.cart = cart;
+	public void setOrder(Order order) {
+		this.order = order;
 	}
 
 	public Product getProduct() {
@@ -55,5 +55,4 @@ public class OrderItem {
 	public void setPriceOnOrder(double priceOnOrder) {
 		this.priceOnOrder = priceOnOrder;
 	}
-
 }
