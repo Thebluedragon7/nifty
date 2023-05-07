@@ -22,8 +22,8 @@ At Nifty, we are passionate about fashion and helping our customers look and fee
 	<link rel="stylesheet" href="/Nifty/assets/css/Nunito.css">
 	<link rel="stylesheet" href="/Nifty/assets/fonts/fontawesome-all.min.css">
 	<link rel="stylesheet" href="/Nifty/assets/css/animate.min.css">
-	<link rel="stylesheet" href="/Nifty/assets/css/Bootstrap-4---Payment-Form.css">
-	<link rel="stylesheet" href="/Nifty/assets/css/Bootstrap-Payment-Form-.css">
+	<link rel="stylesheet" href="/Nifty/assets/css/payment-4.css">
+	<link rel="stylesheet" href="/Nifty/assets/css/payment.css">
 	<link rel="stylesheet" href="/Nifty/assets/css/Navbar-With-Button-icons.css">
 	<link rel="stylesheet" href="/Nifty/assets/css/Projects-Grid-images.css">
 	<link rel="stylesheet" href="/Nifty/assets/css/styles.css">
