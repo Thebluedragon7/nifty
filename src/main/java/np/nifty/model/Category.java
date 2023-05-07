@@ -7,15 +7,17 @@ public class Category {
 	private String name;
 	private String image;
 	private String description;
-	private Admin createdBy;
+	private String slug;
+	private String createdBy;
 	private Date createdAt;
 
-	public Category(String id, String name, String image, String description, Admin createdBy, Date createdAt) {
+	public Category(String id, String name, String image, String description, String slug, String createdBy, Date createdAt) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.image = image;
 		this.description = description;
+		this.slug = slug;
 		this.createdBy = createdBy;
 		this.createdAt = createdAt;
 	}
@@ -52,11 +54,11 @@ public class Category {
 		this.description = description;
 	}
 
-	public Admin getAdmin() {
+	public String getCreatedBy() {
 		return createdBy;
 	}
 
-	public void setAdmin(Admin createdBy) {
+	public void setCreatedBy(String createdBy) {
 		this.createdBy = createdBy;
 	}
 
@@ -66,6 +68,14 @@ public class Category {
 
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
+	}
+
+	public String getSlug() {
+		return slug;
+	}
+
+	public void setSlug(String slug) {
+		this.slug = slug;
 	}
 
 }

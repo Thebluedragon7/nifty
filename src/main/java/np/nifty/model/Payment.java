@@ -8,16 +8,14 @@ public class Payment {
 	private String remark;
 	private String paymentMethod;
 	private Date createdAt;
-	private Card card;
 
-	public Payment(String id, double amount, String remark, String paymentMethod, Date createdAt, Card card) {
+	public Payment(String id, double amount, String remark, String paymentMethod, Date createdAt) {
 		super();
 		this.id = id;
 		this.amount = amount;
 		this.remark = remark;
 		this.paymentMethod = paymentMethod;
 		this.createdAt = createdAt;
-		this.card = card;
 	}
 
 	public String getId() {
@@ -58,13 +56,5 @@ public class Payment {
 
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
-	}
-
-	public Card getCard() {
-		return card;
-	}
-
-	public void setCard(Card card) {
-		this.card = card;
 	}
 }

@@ -6,23 +6,25 @@ public class Product {
 	private String id;
 	private String name;
 	private String image;
+	private String slug;
 	private String description;
 	private int stock;
-	private Category category;
+	private String categoryId;
 	private double price;
 	private Date createdAt;
 	private Date updatedAt;
-	private Admin createdBy;
+	private String createdBy;
 
-	public Product(String id, String name, String image, String description, int stock, Category category, double price,
-			Date createdAt, Date updatedAt, Admin createdBy) {
+	public Product(String id, String name, String image, String slug, String description, int stock, String categoryId,
+			double price, Date createdAt, Date updatedAt, String createdBy) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.image = image;
+		this.slug = slug;
 		this.description = description;
 		this.stock = stock;
-		this.category = category;
+		this.categoryId = categoryId;
 		this.price = price;
 		this.createdAt = createdAt;
 		this.updatedAt = updatedAt;
@@ -69,12 +71,12 @@ public class Product {
 		this.stock = stock;
 	}
 
-	public Category getCategory() {
-		return category;
+	public String getCategoryId() {
+		return categoryId;
 	}
 
-	public void setCategory(Category category) {
-		this.category = category;
+	public void setCategoryId(String categoryId) {
+		this.categoryId = categoryId;
 	}
 
 	public double getPrice() {
@@ -101,12 +103,20 @@ public class Product {
 		this.updatedAt = updatedAt;
 	}
 
-	public Admin getCreatedBy() {
+	public String getCreatedBy() {
 		return createdBy;
 	}
 
-	public void setCreatedBy(Admin createdBy) {
+	public void setCreatedBy(String createdBy) {
 		this.createdBy = createdBy;
+	}
+
+	public String getSlug() {
+		return slug;
+	}
+
+	public void setSlug(String slug) {
+		this.slug = slug;
 	}
 
 }

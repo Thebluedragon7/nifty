@@ -4,16 +4,16 @@ import java.util.Date;
 
 public class Order {
 	private String id;
-	private Customer customer;
-	private Payment payment;
+	private String customerId;
+	private String paymentId;
 	private double totalCost;
 	private Date createdAt;
 
-	public Order(String id, Customer customer, Payment payment, double totalCost, Date createdAt) {
+	public Order(String id, String customerId, String paymentId, double totalCost, Date createdAt) {
 		super();
 		this.id = id;
-		this.customer = customer;
-		this.payment = payment;
+		this.customerId = customerId;
+		this.paymentId = paymentId;
 		this.totalCost = totalCost;
 		this.createdAt = createdAt;
 	}
@@ -26,20 +26,20 @@ public class Order {
 		this.id = id;
 	}
 
-	public Customer getCustomer() {
-		return customer;
+	public String getCustomerId() {
+		return customerId;
 	}
 
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
 	}
 
-	public Payment getPayment() {
-		return payment;
+	public String getPaymentId() {
+		return paymentId;
 	}
 
-	public void setPayment(Payment payment) {
-		this.payment = payment;
+	public void setPaymentId(String paymentId) {
+		this.paymentId = paymentId;
 	}
 
 	public double getTotalCost() {

@@ -2,16 +2,16 @@ package np.nifty.model;
 
 public class OrderItem {
 	private String id;
-	private Order order;
-	private Product product;
+	private String orderId;
+	private String productId;
 	private int quantity;
 	private double priceOnOrder;
 
-	public OrderItem(String id, Order order, Product product, int quantity, double priceOnOrder) {
+	public OrderItem(String id, String orderId, String productId, int quantity, double priceOnOrder) {
 		super();
 		this.id = id;
-		this.order = order;
-		this.product = product;
+		this.orderId = orderId;
+		this.productId = productId;
 		this.quantity = quantity;
 		this.priceOnOrder = priceOnOrder;
 	}
@@ -24,20 +24,20 @@ public class OrderItem {
 		this.id = id;
 	}
 
-	public Order getOrder() {
-		return order;
+	public String getOrderId() {
+		return orderId;
 	}
 
-	public void setOrder(Order order) {
-		this.order = order;
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
 	}
 
-	public Product getProduct() {
-		return product;
+	public String getProductId() {
+		return productId;
 	}
 
-	public void setProduct(Product product) {
-		this.product = product;
+	public void setProductId(String productId) {
+		this.productId = productId;
 	}
 
 	public int getQuantity() {
