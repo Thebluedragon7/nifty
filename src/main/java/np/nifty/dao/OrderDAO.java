@@ -1,6 +1,5 @@
 package np.nifty.dao;
 
-import np.nifty.model.Category;
 import np.nifty.model.Order;
 import np.nifty.utils.DatabaseConnection;
 

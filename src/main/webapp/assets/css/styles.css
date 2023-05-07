@@ -1,0 +1,39 @@
+.btn:hover {
+  color: white;
+  background-color: black;
+  /*border-color: var(--bs-btn-hover-border-color);*/
+}
+
+.btn {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: rgb(0,0,0);
+  border-right-color: rgb(0,0,0);
+  border-bottom-color: rgb(0,0,0);
+  border-left-color: rgb(0,0,0);
+  color: rgb(0,0,0);
+}
+
+.btn {
+  border: none;
+}
+
+.outline {
+  border: 1px solid black;
+}
+
+.add-2-cart-btn {
+  border: 1px solid black;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+

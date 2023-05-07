@@ -1,6 +1,5 @@
 package np.nifty.dao;
 
-import np.nifty.model.Admin;
 import np.nifty.utils.DatabaseConnection;
 
 import java.sql.Connection;
