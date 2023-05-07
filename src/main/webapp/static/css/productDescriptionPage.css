@@ -1,0 +1,131 @@
+/* Product description page layout */
+.product-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.product-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.product-images img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.product-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-details h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-details .price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-details .wishlist,
+.product-details .cart {
+  margin-bottom: 10px;
+}
+
+.product-details .size {
+  margin-bottom: 10px;
+}
+
+.product-details .description {
+  margin-bottom: 10px;
+}
+
+.product-details select {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+/* Add to cart button */
+.add-to-cart-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f16d7f;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-to-cart-button:hover {
+  background-color: #d64f65;
+}
+
+/* Product details table */
+.product-details table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.product-details table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.product-details table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+/* Product description tabs */
+.product-description-tabs {
+  margin-top: 20px;
+}
+
+.product-description-tabs ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-description-tabs li {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-description-tabs li.active {
+  color: #f16d7f;
+  border-bottom: 3px solid #f16d7f;
+}
+
+/* Product description text */
+.product-description-text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
